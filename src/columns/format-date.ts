@@ -1,6 +1,6 @@
 import * as glide from "../glide";
 
-import { DateTime } from "luxon";
+const { DateTime }: typeof import("luxon") = require("luxon");
 
 export default glide
     .columnNamed("Format Date")

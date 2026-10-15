@@ -1,7 +1,9 @@
 import * as glide from "../glide";
 
-import TimeAgo, { FormatStyleName } from "javascript-time-ago";
-import en from "javascript-time-ago/locale/en.json";
+import type { FormatStyleName } from "javascript-time-ago";
+
+const TimeAgo: typeof import("javascript-time-ago").default = require("javascript-time-ago");
+const en = require("javascript-time-ago/locale/en.json");
 
 const styles: FormatStyleName[] = ["round", "mini", "twitter"];
 

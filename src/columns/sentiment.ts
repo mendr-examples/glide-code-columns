@@ -1,8 +1,6 @@
 import * as glide from "../glide";
 import { Cache } from "../cache";
 
-import axios from "axios";
-
 const cache = new Cache({ timeoutSeconds: 5 * 60 });
 
 const interpretations = {
@@ -34,6 +32,7 @@ export default glide
 
         async function getSentiment() {
             try {
+                const { default: axios } = await import("axios");
                 const response = await axios.get("https://twinword-sentiment-analysis.p.rapidapi.com/analyze/", {
                     params: { text },
                     headers: {

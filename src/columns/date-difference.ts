@@ -1,6 +1,7 @@
 import * as glide from "../glide";
 
-import { ConversionAccuracy, DateTime, DurationObjectUnits, DurationUnit } from "luxon";
+import type { ConversionAccuracy, DurationObjectUnits, DurationUnit } from "luxon";
+const { DateTime }: typeof import("luxon") = require("luxon");
 const units: Array<keyof DurationObjectUnits> = ["days", "weeks", "months", "years"];
 
 export default glide

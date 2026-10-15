@@ -1,6 +1,6 @@
 import { Cache } from "../cache";
 
-import * as cheerio from "cheerio";
+import cheerio = require("cheerio");
 import * as glide from "../glide";
 
 const cache = new Cache<string | undefined>({ timeoutSeconds: 5 * 60 });

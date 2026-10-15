@@ -1,6 +1,6 @@
 import * as glide from "../glide";
 
-import { Duration } from "luxon";
+const { Duration }: typeof import("luxon") = require("luxon");
 
 export default glide
     .columnNamed("Format Duration")

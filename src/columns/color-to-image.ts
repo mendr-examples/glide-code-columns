@@ -1,6 +1,6 @@
 import * as glide from "../glide";
 
-import chroma from "chroma-js";
+import chroma = require("chroma-js");
 
 function getSvgForColor(color: string) {
     return `data:image/svg+xml;utf8,

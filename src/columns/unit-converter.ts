@@ -1,6 +1,6 @@
 import * as glide from "../glide";
 
-import * as math from "mathjs";
+import math = require("mathjs");
 
 export default glide
     .columnNamed("Convert Units")

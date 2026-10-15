@@ -1,6 +1,5 @@
 import * as glide from "../glide";
-import { nanoid, customAlphabet } from "../../node_modules/nanoid/async";
-import { customRandom, urlAlphabet } from "nanoid";
+const { customRandom, urlAlphabet }: typeof import("nanoid") = require("nanoid");
 import seedrandom from "seedrandom";
 
 export default glide

@@ -1,6 +1,6 @@
 import * as glide from "../glide";
 
-import { DateTime } from "luxon";
+const { DateTime }: typeof import("luxon") = require("luxon");
 
 export default glide
     .columnNamed("Text to Date")
@@ -23,7 +23,7 @@ export default glide
     .withTest({ text: "12 August 1982", format: "d MMMM yyyy", zone: "utc" }, new Date("1982-08-12T00:00:00.000Z"))
 
     .run(({ text, format, locale, zone }) => {
-        let dt: DateTime;
+        let dt: import("luxon").DateTime;
         const options = { locale, zone };
         if (format === undefined) {
             dt = DateTime.fromISO(text, options);
