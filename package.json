@@ -89,5 +89,12 @@
         "seedrandom": "^3.0.5",
         "wink-eng-lite-web-model": "^1.2.2",
         "wink-nlp": "^1.8.1"
+    },
+    "overrides": {
+        "body-parser": "1.20.9",
+        "handlebars": "4.7.10",
+        "ip-address": "10.7.4",
+        "proxy-addr": "2.0.8",
+        "vm2": "3.12.2"
     }
 }
